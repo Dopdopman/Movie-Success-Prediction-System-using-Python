@@ -1,0 +1,5 @@
+{
+  "name": "PREMO",
+  "description": "PREMO: A tech-noir styled movie success predictor powered by Gemini 2.5 Flash. Analyze script potential based on cast, crew, and genre.",
+  "requestFramePermissions": []
+}
