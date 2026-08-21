@@ -1,44 +1,51 @@
 # 🎬 Movie Success Prediction System
 
-A simple machine learning web application that predicts whether a movie will be a **Flop, Hit, or Super Hit** using **Logistic Regression**, **Django**, and **MySQL**.
+## 📝 About the Project
+This application leverages artificial intelligence to predict the box office potential of movies. By analyzing input parameters like budget, genre, cast, and director using advanced language models (Gemini API), it provides insights into whether a project will be a **Flop**, **Hit**, or **Super Hit**. It helps producers and investors evaluate risk and potential success based on historical and contextual patterns.
 
 ---
 
-## ⭐ Features
+## 🛠️ Tech Stack
+* **Frontend:** React, TypeScript, Vite, Tailwind CSS, Recharts, Lucide React
+* **Backend:** Django, Python
+* **Database:** MySQL
+* **Integration:** Google Gemini API (AI Analysis)
 
-* 🤖 **ML Prediction:** Logistic Regression (≥80% accuracy)
-* 🔐 **Authentication:** User registration & login
-* 🛠️ **Admin Tools:** Manage training data, retrain model
-* 🗂️ **MySQL Database:** Stores users, data, and prediction logs
+---
+
+## 🖼️ Demo
+### 1. Login/Registration Interface
+![Login Page](./assets/login.png)
+
+### 2. Main Prediction Functionality
+![Main Function Dashboard](./assets/main_function.png)
 
 ---
 
 ## 🚀 Run Locally
-
 ### Requirements
-
 * Python 3.10+
 * MySQL
-* pip
+* Node.js & npm
 
 ### Steps
-
+#### 1. Backend Setup
 ```bash
-git clone <repo-url>
-cd movie-success-prediction
-pip install -r requirements.txt
-
-# Setup database
+# Setup database and model
 python manage.py migrate
-
-# Train ML model
 python train_model.py
 
-# Run server
+# Run Django server
 python manage.py runserver
 ```
 
-Open: **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
+#### 2. Frontend Setup
+```bash
+npm install
+npm run dev
+```
+
+Open: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 

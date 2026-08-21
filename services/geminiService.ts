@@ -2,10 +2,10 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { MovieInput, PredictionResult } from "../types";
 
 // Initialize Gemini
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export const predictMovieSuccess = async (data: MovieInput): Promise<PredictionResult> => {
-  const modelId = "gemini-2.5-flash"; // Using Flash for speed and good reasoning on structured tasks
+  const modelId = "gemini-flash-latest"; // Using validated model ID from API list
 
   const prompt = `
     Analyze the potential success of the following movie project based on historical trends, star power, genre popularity, and premise.
